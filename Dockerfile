@@ -38,4 +38,4 @@ RUN echo "Installing poetry version ${POETRY_VERSION}...";\
 
 # Tries to generate lock file and install it for a quick test
 # Ignores any errors by using `exit 0` command at the end to still create the image
-RUN poetry lock --no-update -vv; poetry install --no-root -vvv; pip --version && pip show setuptools; exit 0
+RUN poetry lock --no-update -vvv; poetry install --no-root -vvv; pip --version && pip show setuptools; exit 0
