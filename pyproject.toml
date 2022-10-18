@@ -15,5 +15,5 @@ pytrustnfe3 = "^1.0.61"
 
 [build-system]
 # Defining pip and setuptools versions here didn't work
-requires = ["pip<=22.2.2", "setutools<=58.0.0", "poetry-core"]
+requires = ["pip<=22.2.2", "setuptools<=58.0.0", "poetry-core"]
 build-backend = "poetry.core.masonry.api"
