@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "poetry-test"
+version = "0.1.0"
+description = "Poetry test of version 1.2"
+authors = ["Cauê <caue.polimanti@gmail.com>"]
+readme = "README.md"
+packages = [{include = "poetry_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+# This dependency needs setuptools <= 58.0.0 due to 
+# a dependency on suds-jurko package
+pytrustnfe3 = "^1.0.61"
+
+[build-system]
+# Defining pip and setuptools versions here didn't work
+requires = ["pip<=22.2.2", "setutools<=58.0.0", "poetry-core"]
+build-backend = "poetry.core.masonry.api"
